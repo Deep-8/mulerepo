@@ -21,12 +21,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.9.9</version>
             </plugin>
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>mule-maven-plugin</artifactId>
-                <version>4.1.1</version>
+                <version>3.9.9</version>
                 <extensions>true</extensions>
                 <configuration>
                     <classifier>mule-application</classifier>
