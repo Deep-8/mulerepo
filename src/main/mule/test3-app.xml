@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1b8f748e-763b-4ee0-9752-07b0c42d01cb" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="test3-appFlow" doc:id="d8f8758b-f158-4ddf-bf7b-74bdca34c85a" >
+		<http:listener doc:name="Listener" doc:id="d2a73f35-872d-4eaa-9e31-ce92790f1111" config-ref="HTTP_Listener_config" path="/mymule"/>
+		<set-payload value="This is the 3rd learning app" doc:name="Set Payload" doc:id="395e07b4-a7fe-4c3c-b0da-7a60f0fab299" />
+	</flow>
+</mule>
