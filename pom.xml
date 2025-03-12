@@ -5,10 +5,10 @@
     
     <groupId>198fd2d1-e590-4686-9c6b-6246543be1bc</groupId>
     <artifactId>test</artifactId>
-    <version>1.0.10</version>
+    <version>1.0.0</version>
     <packaging>mule-application</packaging>
     
-    <name>test</name>
+    <name>test3-app</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
